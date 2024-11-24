@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Juego Simón</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container menu">
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="welcome.html">Bienvenida</a>
+            <a href="game.html">Juego</a>
+            <a href="gamegris.html">Juego grises</a>
+            <a href="gameblanco.html">Juego blanco</a>
+            <a href="results.html">Resultados</a>
+        </nav>
+        </div>
+    <div class="container">
+        <div class="welcome-box">
+            <h1>¡Bienvenido al Juego Simón!</h1>
+            <p>Instrucciones: Sigue la secuencia de colores que se ilumina. Cada nivel es más desafiante. ¡Pon a prueba tu memoria!</p>
+            <label for="level">Selecciona el nivel:</label>
+            <select id="level">
+                <option value="beginner">Normal</option>
+                <option value="normal">Intermedio</option>
+                <option value="pro">Avanzado</option>
+            </select>
+            <label for="colors">Selecciona la combinación de colores:</label>
+            <select id="colors">
+                <option value="colores">Cuatro colores</option>
+                <option value="grises">Escala de grises</option>
+                <option value="blanco">¡Todos blancos!</option>
+            </select>
+            <label for="sound">Activar sonido:</label>
+            <input type="checkbox" id="sound" name="sound">
+            <button>Iniciar Juego</button>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

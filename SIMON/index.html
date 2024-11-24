@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Simón</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Botones de navegación (temporal para diseño) -->
+    <div id="navigation" class="navigation">
+        <button onclick="redirect('login')">Ir a Login</button>
+        <button onclick="redirect('welcome')">Ir a Bienvenida</button>
+        <button onclick="redirect('game')">Ir a Juego</button>
+        <button onclick="redirect('results')">Ir a Resultados</button>
+    </div>
+
+    <!-- Interfaz de Login -->
+    <div id="login" class="screen">
+        <h1>Acceso al Juego</h1>
+        <form id="loginForm">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Iniciar Sesión</button>
+            <p id="loginMessage" class="error-message"></p>
+        </form>
+    </div>
+
+    <!-- Interfaz de Bienvenida -->
+    <div id="welcome" class="screen hidden">
+        <h1>¡Bienvenido al Juego Simón!</h1>
+        <div id="instructions">
+            <p>El objetivo es seguir la secuencia de colores que se te presenta. Cada nivel es más difícil. ¡Pon a prueba tu memoria y habilidad!</p>
+        </div>
+        <label for="level">Selecciona el nivel:</label>
+        <select id="level">
+            <option value="3">Principiante (3 botones)</option>
+            <option value="4">Intermedio (4 botones)</option>
+            <option value="6">Avanzado (6 botones)</option>
+        </select>
+        <button id="startGame">Comenzar Juego</button>
+    </div>
+
+    <!-- Interfaz de Juego -->
+    <div id="game" class="screen hidden">
+        <h1>Zona de Juego</h1>
+        <div id="infoPanel">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Tiempo Restante: <span id="timer">100</span> segundos</p>
+        </div>
+        <div id="gameArea"></div>
+        <button id="exitGame">Salir</button>
+    </div>
+
+    <!-- Interfaz de Resultados -->
+    <div id="results" class="screen hidden">
+        <h1>Resultados del Juego</h1>
+        <p id="gameOutcome">Resultado del juego...</p>
+        <p id="summary"></p>
+        <button id="retryGame">Reintentar</button>
+        <button id="exitToLogin">Salir</button>
+    </div>
+
+    <script src=""></script>
+</body>
+</html>

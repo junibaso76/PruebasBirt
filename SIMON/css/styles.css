@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1;
+}
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+.screen {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación de prueba (solo para diseño) */
+.navigation {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.navigation button {
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.navigation button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Botones generales */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Botones del juego */
+#buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.game-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+.game-button.active {
+    border-color: #fff;
+    box-shadow: 0 0 20px 5px #fff;
+}
+
+/* Esquemas de colores */
+.scheme1 .game-button:nth-child(1) { background-color: #ff0000; } /* Rojo */
+.scheme1 .game-button:nth-child(2) { background-color: #00ff00; } /* Verde */
+.scheme1 .game-button:nth-child(3) { background-color: #0000ff; } /* Azul */
+.scheme1 .game-button:nth-child(4) { background-color: #ffff00; } /* Amarillo */
+.scheme1 .game-button:nth-child(5) { background-color: #ff00ff; } /* Rosa */
+.scheme1 .game-button:nth-child(6) { background-color: #00ffff; } /* Cyan */
+
+/* Añadir más combinaciones (scheme2, scheme3, ...) */
+
+/* Colores al activarse */
+.game-button.active:nth-child(1) { background-color: #ff8080; }
+.game-button.active:nth-child(2) { background-color: #80ff80; }
+.game-button.active:nth-child(3) { background-color: #8080ff; }
+.game-button.active:nth-child(4) { background-color: #ffff80; }
+.game-button.active:nth-child(5) { background-color: #ff80ff; }
+.game-button.active:nth-child(6) { background-color: #80ffff; }
